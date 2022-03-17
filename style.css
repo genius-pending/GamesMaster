@@ -2,8 +2,6 @@ body {
     background-image:url("gamesmaster1.jpeg");
     background-position:center ;
     background-size:100%;
-    background-repeat: cover;
-    
  }
 
 
@@ -39,16 +37,17 @@ body {
 
 .modalfooter{
     background: coral;
-    padding:10px;
     color: aliceblue;
     text-align: center;
+    font-size:xx-large;
 }
 
 .modalbody{
     padding:10px 20px;
+    text-align: center;
 }
 
-.modalheader h2, .modalfooter h3{
+.modalheader h2, .modalfooter h6{
     margin: 0;
 }
 
