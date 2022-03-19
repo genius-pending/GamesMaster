@@ -5,6 +5,16 @@ body {
     background-repeat: no-repeat;
  }
 
+ .container{
+
+    margin: bottom 2px;
+    position: relative;
+    right: 3%;
+    justify-content: flex-end;
+    
+
+ }
+
 
  .modalcontent{
     display: none;
@@ -22,6 +32,22 @@ body {
      color: white;
      padding-right: 15px;
  }
+
+ .overviewcloseBtn{
+     float: right;
+     font-size: 30px;
+     color: black;
+     padding-right:15px;
+     position: relative;
+     bottom:12px;
+     left: 5px;
+ }
+
+ .overviewcloseBtn:hover,.overviewcloseBtn:focus{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
 
  .closeBtn:hover,.closeBtn:focus{
      text-decoration: none;
@@ -58,14 +84,82 @@ body {
     
 }
 
-.card{
-    display: none;
-    margin-left: 30px;
-    margin-top: 30px;
-    background: #E6E6FA;
-}
 
 .list-group-item{
-    background: #E6E6FA;
+    background:aliceblue;
+    display:flex
     
 }
+
+.gamecard{
+    display:flexbox;
+    margin-top: 30px;
+    background: #E6E6FA;
+
+}
+
+.card{
+    display: none;
+}
+
+
+.cardonclick{
+    display: flexbox;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.btn{
+
+    margin-left: 20px;
+    position: relative;
+    left: 2.5cm;
+}
+
+.form-control{
+    
+    position: relative;
+    left: 3cm;
+    border-radius: 5px;
+}
+
+.game-info span.green{
+    color: lightgreen;
+
+}
+
+.game-info span.orange{
+    color: orange;
+    
+}
+
+.game-info span.red{
+    color: red;
+        
+}
+
+.overview{
+    display: none;
+    position: fixed;
+    background-color: aliceblue;
+    left: 20%;
+    top: 30%;
+    width:70%;
+    padding: 0.5rem 1rem 1rem;
+    
+}
+
+
+.game-info{
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.2;
+    
+    
+}
+.card-img-top:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+

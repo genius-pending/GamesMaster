@@ -18,11 +18,13 @@
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" id="logo" href="#mymodal">
-      <img src="Gamemaster logo.jpeg" id="modalBtn" alt="" width="250" height="90">
+      <img src="Gamemaster logo.jpeg" id="modalBtn" alt="" width="200" height="60">
     </a>
-    <form class="d-flex" >
+    <form class="d-flex">
       <input class="form-control me-2" type="search" id="input" placeholder="Enter A Game" aria-label="Search">
       <button class="btn btn-outline-light" id="searchfield" type="submit">Search</button>
+      <button class="btn btn-outline-light" id="loginbtn" type="submit">Login</button>
+      
     </form>
   </div>
 </nav>
@@ -36,7 +38,7 @@
       <h2> GAMES MASTER</h2>
     </div>
     <div class="modalbody">
-      <p>Hello..... welcome to games master, created for gaming enthusiast to browse Reviews, News 
+      <p>Hello..... welcome to games master, created for gaming enthusiast to browse Reviews, News
         and all the latest in Gaming.</p>
       <p>Enjoy content from the brand that made gaming cool.</p>
     </div>
@@ -48,20 +50,33 @@
 
   <!--Gamecards-->
 
-
   <div class="card" style="width: 18rem;" id="card">
-    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+    <img class="card-img-top" src="https://via.placeholder.com/150" id="gamecardimg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
+      <h5 class="card-title">Game Title</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">Available On:</li>
+      <li class="list-group-item">Released On:</li>
+      <li class="list-group-item">Rating:</li>
     </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Reviews</a>
+    </div>
   </div>
+
+
+ <!---Plot Modal-->
+  <div class="container">
+      <div class="overview" id="overview">
+        <span class="overviewcloseBtn" id="overviewcloseBtn">&times;</span>
+        <h5>Plot Synopsis</h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Odio cum assumenda culpa veniam officiis quis saepe explic
+        abo hic dolores porro.
+      </div>
+  </div>
+    
 </body>
 
 
