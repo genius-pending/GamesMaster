@@ -3,6 +3,7 @@ body {
     background-position:center ;
     background-size:cover;
     background-repeat: no-repeat;
+    
  }
 
  .container{
@@ -87,26 +88,22 @@ body {
 
 .list-group-item{
     background:aliceblue;
-    display:flex
+    display:inline-flexbox
     
 }
 
 .gamecard{
-    display:flexbox;
+    
     margin-top: 30px;
     background: #E6E6FA;
 
 }
 
 .card{
+    
     display: none;
-}
+   
 
-
-.cardonclick{
-    display: flexbox;
-    margin-left: 30px;
-    margin-top: 30px;
 }
 
 .btn{
@@ -151,6 +148,7 @@ body {
 
 
 .game-info{
+  
     align-items: center;
     justify-content:space-evenly;
     padding: 0.5rem 1rem 1rem;
@@ -163,3 +161,45 @@ body {
     transform: scale(1.1); 
 }
 
+
+.cardclick{
+    margin: 30px;
+    display: inline-block;
+    width: 18rem; 
+    border: 1.5px solid #212529
+}
+
+
+.cardcontainer h5{
+
+   font-size: medium;
+   font-weight: bold;
+   
+}
+
+.cardcontainer{
+    display: inline-flexbox;
+    width: fit-content;
+    
+}
+.img{
+    border-radius: 8px solid sandybrown;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.footer{
+
+    background-color:#212529;
+    color: whitesmoke;
+    text-align: center;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: none;
+  }
