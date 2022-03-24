@@ -21,6 +21,7 @@ function openModal() {
   overview.style.display = 'none';
   cardcontainer.style.display = 'none';
   footer.style.display ='none';
+  
 }
 closeBtn.addEventListener('click', closeModal);
 function closeModal() {
@@ -51,7 +52,7 @@ function getGames(url){
  //displays results from api call on the screen 
   function showGames(data){
 
-    card.innerHTML = "";
+    cardcontainer.innerHTML = "";
     
     data.forEach(game => {
       const{name,released,background_image,metacritic} = game
@@ -85,6 +86,8 @@ function getGames(url){
     simpleModal.style.display = 'none';
     document.body.style.backgroundImage = 'none';
     footer.style.display='block';
+    cardcontainer.style.display = 'block';
+    
     
   }
 
@@ -105,7 +108,6 @@ function getGames(url){
   searchButton.onclick = function(e){
     
     e.preventDefault();
-    cardcontainer.innerHTML="";
     searchdisplay();
     getGames(Base_URL);
     
