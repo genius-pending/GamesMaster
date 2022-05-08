@@ -64,7 +64,6 @@ function showGames(data) {
     let month = new Date(released).getMonth() + 1;
     let year = new Date(released).getFullYear();
     let newdate = `${day}/${month}/${year}`
-    console.log('day:' + day)
 
     gameEl.innerHTML = ` 
       
@@ -75,7 +74,7 @@ function showGames(data) {
       <ul class="list-group list-group-flush">
       <li class="list-group-item">Available On:</li>
       <li class="list-group-item">Released On: ${newdate}</li>
-      <li class="list-group-item .${getColour(metacritic)}">Rating: ${metacritic}</li>
+      <li class="list-group-item">Rating: <span class ="${getColour(metacritic)}"> ${metacritic}<span></li>
       </ul>
       <div class="card-body">
       <a href="#" class="card-link">Reviews</a>
@@ -118,9 +117,11 @@ function searchRefresh() {
 function getColour(vote) {
   if (vote >= 80) {
     return 'green'
-  } else if (vote >= 50) {
+  } else if (vote >= 60) {
     return 'orange'
-  } else {
+  } else if (vote == "null") 
+  return 'black'
+  else {
     return 'red'
   }
 }

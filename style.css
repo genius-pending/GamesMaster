@@ -120,20 +120,35 @@ body {
     border-radius: 5px;
 }
 
-.game-info span.green{
-    color: lightgreen;
+.list-group-item{
+    font-size: medium;
+}
+
+
+.green{
+    color: green;
 
 }
 
-.game-info span.orange{
+.orange{
     color: orange;
     
 }
 
-.game-info span.red{
+.red{
     color: red;
         
 }
+
+.black{
+    color: black;
+        
+}
+
+span{
+    font-weight: bold;
+}
+
 
 .overview{
     display: none;
@@ -174,8 +189,8 @@ body {
 
 .cardcontainer h5{
 
-   font-size: small;
-   font-weight: bold;
+   font-size: medium;
+   font-weight: bolder;
    
 }
 
