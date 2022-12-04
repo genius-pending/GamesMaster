@@ -57,13 +57,17 @@ function showGames(data) {
   cardcontainer.innerHTML = "";
 
   data.forEach(game => {
-    const { name, released, background_image, metacritic, id } = game
+    const {name, released, background_image, metacritic, id, parent_platforms} = game
     const gameEl = document.createElement('div');
     gameEl.classList.add('cardclick');
     let day = new Date(released).getDate();
     let month = new Date(released).getMonth() + 1;
     let year = new Date(released).getFullYear();
     let newdate = `${day}/${month}/${year}`
+    let newplatform = parent_platforms.map(elem => (
+    {
+      Platform:elem.platform.name
+    }));
 
     gameEl.innerHTML = ` 
       
@@ -72,7 +76,7 @@ function showGames(data) {
       <h5 class="card-title" id="gamename">${name}</h5>
       </div>
       <ul class="list-group list-group-flush">
-      <li class="list-group-item">Available On:</li>
+      <li class="list-group-item">Available On:${JSON.stringify(newplatform).replace(/[&\/\\#+()$~%.'"*?<>]/g, '')}</li>
       <li class="list-group-item">Released On: ${newdate}</li>
       <li class="list-group-item">Rating: <span class ="${getColour(metacritic)}"> ${metacritic}<span></li>
       </ul>
