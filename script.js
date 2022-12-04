@@ -123,7 +123,7 @@ function getColour(vote) {
     return 'green'
   } else if (vote >= 60) {
     return 'orange'
-  } else if (vote == "null") 
+  } else if (vote == null) 
   return 'black'
   else {
     return 'red'
